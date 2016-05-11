@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+xcodebuild \
+  -project NSDateFormatterJSON.xcodeproj \
+  -scheme NSDateFormatterJSON \
+  -destination 'platform=iOS Simulator,name=iPhone 5s,OS=latest' \
+  test
